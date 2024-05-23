@@ -10,6 +10,7 @@
   <Url value="$moduleurl$" />
   <DependedModules>
     <DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.2.2" />
+    <DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v5.0.0" />
     <DependedModule Id="Native" />
     <DependedModule Id="SandBoxCore" />
     <DependedModule Id="Sandbox" />
@@ -20,6 +21,7 @@
   <!-- https://github.com/BUTR/Bannerlord.BLSE#community-dependency-metadata -->
   <DependedModuleMetadatas>
     <DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v2.2.2" />
+    <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" version="v5.0.0" />
     <DependedModuleMetadata id="Native" order="LoadBeforeThis" />
     <DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" />
     <DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" />
@@ -32,6 +34,18 @@
       <Name value="$modulename$" />
       <DLLName value="$modulename$.dll" />
       <SubModuleClassType value="$modulename$.SubModule" />
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <Name value="MCMv5" />
+      <DLLName value="MCMv5.dll" />
+      <SubModuleClassType value="MCM.MCMSubModule" />
+      <Tags />
+    </SubModule>
+    <SubModule>
+      <Name value="MCMv5 Basic Implementation" />
+      <DLLName value="MCMv5.dll" />
+      <SubModuleClassType value="MCM.Internal.MCMImplementationSubModule" />
       <Tags />
     </SubModule>
   </SubModules>
