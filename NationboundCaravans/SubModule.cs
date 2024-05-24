@@ -110,6 +110,11 @@ public static class Patches
     public static bool Prefix(MobileParty caravanParty, bool distanceCut, ref Town __result,
         CaravansCampaignBehavior __instance)
     {
+        if (caravanParty.Owner.MapFaction == null)
+        {
+            return true;
+        }
+        
         if (SubModule.OnlyEffectPlayers && !caravanParty.Owner.IsHumanPlayerCharacter)
         {
             return true;
