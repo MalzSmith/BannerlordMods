@@ -1,4 +1,4 @@
-This is my collection of mods for [Mount@Blade II Bannerlord](https://www.taleworlds.com/en/Games/Bannerlord)
+This is my collection of mods for [Mount&Blade II Bannerlord](https://www.taleworlds.com/en/Games/Bannerlord)
 
 # Nationbound Caravans
 
